@@ -1,0 +1,10 @@
+[project]
+name = "parkinglot"
+version = "1.0.0"
+description = "Library for Rush Hour game"
+readme = "README.md"
+requires-python = ">=3.12"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
