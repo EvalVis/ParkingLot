@@ -84,10 +84,9 @@ class Lot:
             eligible_boards = []
             for line in lines:
                 parts = line.strip().split()
-                if len(parts) >= 2:
-                    moves, board = int(parts[0]), parts[1]
-                    if moves_to_solve is None or moves == moves_to_solve:
-                        eligible_boards.append(board)
+                moves, board = int(parts[0]), parts[1]
+                if moves_to_solve is None or moves == moves_to_solve:
+                    eligible_boards.append(board)
             
             if not eligible_boards:
                 if moves_to_solve is not None:
@@ -97,6 +96,7 @@ class Lot:
             
             # Select a random board from the eligible ones
             selected_board = random.choice(eligible_boards)
+            selected_board = '\n'.join(selected_board[i:i+6] for i in range(0, len(selected_board), 6))
             
             # Initialize from the selected board
             self._init_from_layout(selected_board)
