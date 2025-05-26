@@ -200,5 +200,24 @@ class TestLot(unittest.TestCase):
         almost_solved_lot = Lot(almost_solved_layout)
         self.assertFalse(almost_solved_lot.is_solved(), "Car A not at rightmost edge should not be solved")
 
+    def test_board_load_from_file(self):
+        """Test loading a board from file with specific number of moves to solve."""
+        # Test loading a board that can be solved in 60 moves
+        lot = Lot(60)
+        
+        # The expected board layout for 60 moves from rush.txt
+        expected_board = "IBB#..I..LDDJAAL..J.KEEMFFK..MGGHHHM"
+        expected_grid = [
+            expected_board[i:i+6] for i in range(0, len(expected_board), 6)
+        ]
+        
+        actual_grid = lot.grid()
+        self.assertEqual(actual_grid, expected_grid, 
+                        f"Expected board {expected_grid}, but got {actual_grid}")
+        
+        width, height = lot.dimensions()
+        self.assertEqual(width, 6, "Width should be 6")
+        self.assertEqual(height, 6, "Height should be 6")
+
 if __name__ == '__main__':
     unittest.main() 
