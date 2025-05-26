@@ -146,6 +146,10 @@ class TestLot(unittest.TestCase):
             self.lot.move('A', 3)
         self.assertIn("cannot move 3 spaces forward", str(context.exception))
 
+        with self.assertRaises(ValueError) as context:
+            self.lot.move('A', -2)
+        self.assertIn("cannot move -2 spaces backward", str(context.exception))
+
         # Test moving non-existent vehicle
         with self.assertRaises(ValueError) as context:
             self.lot.move('X', 1)
