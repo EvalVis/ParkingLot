@@ -8,6 +8,12 @@ requires-python = ">=3.12"
 license = {text = "GPL-3.0-or-later"}
 dependencies = []
 
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.4",
+    "pytest-cov>=6.1.1",
+]
+
 [project.urls]
 Repository = "https://github.com/EvalVis/ParkingLot"
 
