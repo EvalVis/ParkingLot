@@ -64,7 +64,10 @@ class Lot:
         """
         try:
             # Try to get the file from the package resources
+            print("DEBUGGING")
             is_test = os.getenv('is_test', '').lower() == 'true'
+            print(os.getenv('is_test', '').lower())
+            print("DEBUG END")
             file_name = 'rush_sample.txt' if is_test else 'rush.txt'
             try:
                 with resources.files('parkinglot').joinpath(file_name).open('r') as f:
