@@ -67,7 +67,7 @@ class Lot:
             is_test = os.getenv('is_test', '').lower() == 'true'
             file_name = 'rush_sample.txt' if is_test else 'rush.txt'
             try:
-                resource_path = resources.files('parkinglot').joinpath(file_name)
+                resource_path = resources.files('parkinglotpuzzle').joinpath(file_name)
                 
                 try:
                     with resource_path.open('r') as f:

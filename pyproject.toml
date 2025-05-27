@@ -1,5 +1,5 @@
 [project]
-name = "parkinglot"
+name = "parkinglotpuzzle"
 version = "1.0.0"
 authors = [{name = "Evaldas Visockas", email = "developersediary@gmail.com"}]
 description = "Library for Rush Hour game"
@@ -26,4 +26,4 @@ testpaths = ["tests"]
 python_files = ["test_*.py"]
 
 [tool.setuptools.package-data]
-parkinglot = ["rush.txt"]
+parkinglotpuzzle = ["rush.txt"]
