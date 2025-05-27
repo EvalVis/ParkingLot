@@ -10,7 +10,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     env:
-      is_test: true
+      is_test: "true"
 
     steps:
     - uses: actions/checkout@v3
