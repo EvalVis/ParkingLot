@@ -64,10 +64,7 @@ class Lot:
         """
         try:
             # Try to get the file from the package resources
-            print("DEBUGGING")
             is_test = os.getenv('is_test', '').lower() == 'true'
-            print(os.getenv('is_test', '').lower())
-            print("DEBUG END")
             file_name = 'rush_sample.txt' if is_test else 'rush.txt'
             try:
                 with resources.files('parkinglot').joinpath(file_name).open('r') as f:
@@ -97,7 +94,7 @@ class Lot:
                 if moves_to_solve is not None:
                     raise ValueError(f"No boards found that can be solved in {moves_to_solve} moves.")
                 else:
-                    raise ValueError("No boards found in rush.txt.")
+                    raise ValueError(f"No boards found in {file_name}.")
             
             # Select a random board from the eligible ones
             selected_board = random.choice(eligible_boards)
@@ -107,7 +104,7 @@ class Lot:
             self._init_from_layout(selected_board)
             
         except Exception as e:
-            raise RuntimeError(f"Failed to load board from rush.txt: {str(e)}")
+            raise RuntimeError(f"Failed to load board from {file_name}: {str(e)}")
 
     def query_vehicles(self):
         """
