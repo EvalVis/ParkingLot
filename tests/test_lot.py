@@ -203,6 +203,7 @@ class TestLot(unittest.TestCase):
     def test_board_load_from_file(self):
         """Test loading a board from file with specific number of moves to solve."""
         # Test loading a board that can be solved in 60 moves
+        os.environ["is_test"] = "true"
         lot = Lot(60)
         
         # The expected board layout for 60 moves from rush.txt

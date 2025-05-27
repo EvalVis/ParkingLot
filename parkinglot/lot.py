@@ -64,17 +64,19 @@ class Lot:
         """
         try:
             # Try to get the file from the package resources
+            is_test = os.getenv('is_test', '').lower() == 'true'
+            file_name = 'rush_sample.txt' if is_test else 'rush.txt'
             try:
-                with resources.files('parkinglot').joinpath('rush.txt').open('r') as f:
+                with resources.files('parkinglot').joinpath(file_name).open('r') as f:
                     lines = f.readlines()
             except (FileNotFoundError, ImportError):
                 # If the file doesn't exist in the package, try the local directory
                 file_dir = os.path.dirname(os.path.abspath(__file__))
-                file_path = os.path.join(file_dir, 'rush.txt')
+                file_path = os.path.join(file_dir, file_name)
                 
                 # If still not found, raise an error
                 if not os.path.exists(file_path):
-                    raise FileNotFoundError("rush.txt not found in package or local directory")
+                    raise FileNotFoundError(f"{file_name} not found in package or local directory")
                 
                 # Read the file
                 with open(file_path, 'r') as f:
