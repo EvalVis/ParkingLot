@@ -35,8 +35,7 @@ Known clients: [![GitHub](https://img.shields.io/badge/GitHub-EvalVis/ParkingLot
 
 ## Functionality
 - Create puzzle:
-      - Provide a number of moves.
-      Get a random preconfigured puzzle solvable in provided number of moves. Note that there are no puzzles solvable in 56, 57, 59 moves. Inputting these numbers will cause error.
+      - Provide a number of moves. Get a random preconfigured puzzle solvable in provided number of moves. Note that there are no puzzles solvable in 56, 57, 59 moves. Inputting these numbers will cause error.
       - Provide a custom NxM puzzle. If invalid puzzle is provided an error will be thrown.
 - Get a list of vehicles and their positions on the puzzle.
 - Get width and height of the puzzle.
