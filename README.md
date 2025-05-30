@@ -11,9 +11,9 @@ Known clients: [![GitHub](https://img.shields.io/badge/GitHub-EvalVis/ParkingLot
 
  ## Board definition.
 
- Hash (#) represents the walls. Vehicles cannot move into walls.
+ Hash (`#`) represents the walls. Vehicles cannot move into walls.
 
- Dot (.) represents the empty spaces. Cars can move freely into empty spaces.
+ Dot (`.`) represents the empty spaces. Cars can move freely into empty spaces.
  
  Other characters represent vehicles.
  However, for standartization using capital letters for vehicles are encouraged.
