@@ -35,8 +35,8 @@ Known clients: [![GitHub](https://img.shields.io/badge/GitHub-EvalVis/ParkingLot
 
 ## Functionality
 - Create puzzle:
-    - Provide a number of moves. Get a random preconfigured puzzle solvable in provided number of moves. Note that there are no puzzles solvable in 56, 57, 59 moves. Inputting these numbers will cause error.
-    - Provide a custom NxM puzzle. If invalid puzzle is provided an error will be thrown.
+  - Provide a number of moves. Get a random preconfigured puzzle solvable in provided number of moves. Note that there are no puzzles solvable in 56, 57, 59 moves. Inputting these numbers will cause error.
+  - Provide a custom NxM puzzle. If invalid puzzle is provided an error will be thrown.
 - Get a list of vehicles and their positions on the puzzle.
 - Get width and height of the puzzle.
 - Show puzzle representation.
@@ -124,17 +124,17 @@ print(lot.is_solved())
 #True
 ```
 
-## Game configuration database
-
-The `rush_sample.txt` contains a modified sample from database of game configurations created by Michael Fogleman https://www.michaelfogleman.com/rush/.
-Modified means o is replaced with . and x with #.
-
 ## Caution
 Please only use `str(lot)` method when printing.
 Otherwise make use of `lot.grid()` method.
 
 If you couple to `str(lot)` and this method will change by introducing different
 formatting or showing the board in a different way, your code will break.
+
+## Game configuration database
+
+The `rush_sample.txt` contains a modified sample from database of game configurations created by Michael Fogleman https://www.michaelfogleman.com/rush/.
+Modified means o is replaced with . and x with #.
 
 ## Extra sources
 
