@@ -1,7 +1,6 @@
 # ParkingLotPuzzle
 
 [![codecov](https://codecov.io/gh/EvalVis/ParkingLot/branch/main/graph/badge.svg)](https://codecov.io/gh/EvalVis/ParkingLot)
-
 [![PyPI version](https://badge.fury.io/py/parkinglot.svg)](https://pypi.org/project/parkinglot/)
 
 This lib simulates a RushHour puzzle created by Nob Yoshigahara: https://en.wikipedia.org/wiki/Rush_Hour_(puzzle).
