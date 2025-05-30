@@ -48,7 +48,7 @@ Known clients: [![GitHub](https://img.shields.io/badge/GitHub-EvalVis/ParkingLot
  ## Library restriction
 
  Vehicles which have a length of a single cell are not allowed
- since we would not know which direction it is facing.
+ since it is not clear which direction it is facing.
 
 ## Usage
 
