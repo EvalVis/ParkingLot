@@ -7,7 +7,7 @@ This lib simulates a RushHour puzzle created by Nob Yoshigahara: https://en.wiki
 
 You can choose from lots of preconfigured puzzles or input your custom puzzle configuration.
 
-Known clients: [![GitHub](https://img.shields.io/badge/GitHub-EvalVis/ParkingLot-black?style=flat&logo=github)](https://github.com/EvalVis/ParkingLot).
+Known clients: [![GitHub](https://img.shields.io/badge/GitHub-EvalVis/ParkingLotGym-black?style=flat&logo=github)](https://github.com/EvalVis/ParkingLotGym).
 
  ## Board definition.
 

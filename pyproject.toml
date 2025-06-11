@@ -1,6 +1,6 @@
 [project]
 name = "parkinglotpuzzle"
-version = "1.0.1"
+version = "1.0.2"
 authors = [{name = "Evaldas Visockas", email = "developersediary@gmail.com"}]
 description = "Library for Rush Hour game"
 readme = "README.md"
